@@ -1,5 +1,5 @@
 import {useForm} from "react-hook-form"
-import "./app.css"
+import "./App.css"
 import { validadorEurekae } from "./validadorEurekae";
 
 
