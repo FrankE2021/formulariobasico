@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Dosis:wght@200..800&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Dosis:wght@200..800&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+
+body {
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147)); /* Verde claro */
+    background-attachment: fixed; /* Asegura que el fondo no se mueva al desplazarse */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el padding predeterminado */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+.pregunta{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #add8e6, #87ceeb); /* Degradado azul claro */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pregunta label{
+    width: 85px;
+    color: #6112ac; /* Texto oscuro para contraste */
+    font-family: "Bungee", sans-serif; /* Fuente moderna */
+    padding-right: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input{
+    padding: 5px 6px;
+    border: 1px solid #808080; /* Borde gris claro */
+    border-radius: 2px;
+    outline: none;
+    box-shadow: 0 0 2px #808080; /* Sombra gris claro */
+    background-color: #f2f2f2;
+    flex: 1;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
 }
 
-.App-link {
-  color: #61dafb;
+.aviso{
+    margin-bottom: 20px;
+    color: white;
+    background: linear-gradient(to right, #9370db, #8a2be2); /* Degradado violeta claro */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resumen{
+    background: linear-gradient(to right, #9370db, #8a2be2); /* Degradado violeta claro */
+    color: white;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border-radius: 3px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
 }
